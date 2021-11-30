@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>arrays</h2>
+  <p id="demo"></p>
+  <p id="demo1"></p>
+  <script>
+   
+	var i;
+	   
+	var n= prompt("enter the number of elements in an array");
+   
+   	 document.getElementById("demo").innerHTML="enter the element in array";
+   
+   var arr = []; //arr initialized
+
+		for(i=0;i<n;i++)
+			{
+			  arr.push(prompt("enter the element")); //pushed user input to arr using prompt function
+			}
+
+		for(i=0;i<n;i++)
+			{
+			 document.getElementById("demo1").innerHTML="the elements are " + arr + "<br>" ; //Output displayed in webpage
+			  console.log(arr[i]); //userinput displayed in console
+			}
+			
+  </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>Outside myFunction() language is undefined.</p>
+
+<p id="test1"></p>
+
+<p id="test2"></p>
+
+<script>
+myFunction();
+
+function myFunction() {
+  var language = "JavaScript";
+  document.getElementById("test1").innerHTML =
+  typeof language + " " + language;
+}
+
+document.getElementById("test2").innerHTML = typeof language;
+</script>
+
+
+
+
+</body>
+</html>

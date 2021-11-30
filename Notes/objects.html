@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Objects</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		let person = {
+
+			name: 'ron' ,
+			age: 25,
+			marks: {
+
+				maths : 85,
+				chemistry : 70,
+				science : 68 ,
+				sayHello : function () { document.write(person.marks.science) }
+			}
+		};
+
+		document.write(person.name + "<br>");
+
+		document.write(person['age'] + "<br>");
+
+		document.write(person.marks.maths + "<br>");
+
+		console.log(person.marks.maths);
+
+	
+person.sayHello();
+
+	</script>
+
+</body>
+</html>
